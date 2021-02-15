@@ -22,13 +22,9 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # Twitter account of political parties in Greece
-# In descending order based on the number of parliament seats held after the 2019 Greek legislative election
-twitter_accounts: list[str] = ['neademokratia',
-                               'syriza_gr',
-                               'kinimallagis',
-                               'gt_kke',
-                               'ellinikilisi',
-                               'mera25_gr']
+# In ascending order based on the number of parliament seats held after the 2019 Greek legislative election
+# https://en.wikipedia.org/wiki/2019_Greek_legislative_election
+twitter_accounts: list[str] = ['mera25_gr', 'ellinikilisi', 'gt_kke', 'kinimallagis', 'syriza_gr', 'neademokratia']
 
 # Load Greek NLP model
 nlp = spacy.load('el_core_news_md')
