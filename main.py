@@ -67,8 +67,8 @@ def generate_account_word_cloud(twitter_account: str, number_of_tweets: int) -> 
     plt.figure(figsize=(20, 10))
     plt.imshow(word_cloud, interpolation='bilinear')
     plt.axis('off')
-    title: str = f'Word cloud for account @{twitter_account} using its last {number_of_tweets} tweets\ngenerated on: {timestamp.strftime("%Y-%m-%d %H:%M")} UTC'
-    plt.title(title, fontdict={'size': 30})
+    title: str = f'Word cloud for account @{twitter_account} using its last {number_of_tweets} tweets\ngenerated on {timestamp.strftime("%Y-%m-%d %H:%M")} UTC'
+    plt.title(f'{title} by @KleioBot', fontdict={'size': 30})
     image_path = pathlib.Path(pathlib.Path.cwd() / 'images' /
                               f'{twitter_account}_{timestamp.strftime("%Y_%m_%d_%H_%M")}.png')
     plt.savefig(image_path)
