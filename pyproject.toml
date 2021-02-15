@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "kleio_bot"
+version = "0.1.0"
+description = ""
+authors = ["Angelos Panagiotopoulos <angelospanag@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spacy = "^3.0.3"
+tweepy = "^3.10.0"
+wordcloud = "^1.8.1"
+el-core-news-md = {url = "https://github.com/explosion/spacy-models/releases/download/el_core_news_md-3.0.0/el_core_news_md-3.0.0-py3-none-any.whl"}
+python-dotenv = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.5"
+pep8-naming = "^0.11.1"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
