@@ -96,8 +96,8 @@ python main.py
 
 ## Running the bot periodically
 
-I am currently using [cron](https://man7.org/linux/man-pages/man5/crontab.5.html) to schedule the bot to run to run
-every day at 9:00 AM UTC (which translates to 11:00 AM Greece time). You can easily experiment using the same process.
+I am currently using [cron](https://man7.org/linux/man-pages/man5/crontab.5.html) to schedule the bot to run every day
+at 9:00 AM UTC (which translates to 11:00 AM Greece time). You can easily experiment using the same process.
 
 You can edit your `cron` schedule with:
 
