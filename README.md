@@ -62,7 +62,15 @@ poetry install
 poetry shell
 ```
 
+### Create a Twitter app and generate the necessary credentials
+
+In order for this bot to make use of the Twitter API, you must first create an app and generate the necessary consumer
+keys and access tokens. Refer to the Twitter
+API [documentation](https://developer.twitter.com/en/docs/twitter-api/getting-started/guide) on how to do that.
+
 ### Environment variables
+
+Use the consumer keys and access tokens generated for your app:
 
 ```dotenv
 CONSUMER_KEY=...
@@ -74,7 +82,7 @@ ACCESS_TOKEN_SECRET=...
 ## Running the bot manually
 
 ***Warning!*** Running this application will actually post word clouds to the Twitter account you have linked using the
-environment variables above. To avoid this and just see the generated pictures comment out the following line:
+environment variables above. To avoid this and just see the generated pictures, comment out the following line:
 
 ```python
 api.update_with_media(image_path, title)
