@@ -21,7 +21,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-# Twitter account of political parties in Greece
+# Twitter accounts of political parties in Greece
 # In ascending order based on the number of parliament seats held after the 2019 Greek legislative election
 # https://en.wikipedia.org/wiki/2019_Greek_legislative_election
 twitter_accounts: list[str] = ['mera25_gr', 'ellinikilisi', 'gt_kke', 'kinimallagis', 'syriza_gr', 'neademokratia']

@@ -70,7 +70,7 @@ API [documentation](https://developer.twitter.com/en/docs/twitter-api/getting-st
 
 ### Environment variables
 
-Create a `.env` file in the root of the project and add the consumer keys and access tokens generated for your app:
+Create a `.env` file at the root of the project and add the consumer keys and access tokens generated for your app:
 
 ```dotenv
 CONSUMER_KEY=...
