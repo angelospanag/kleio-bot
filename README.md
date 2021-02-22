@@ -70,7 +70,7 @@ API [documentation](https://developer.twitter.com/en/docs/twitter-api/getting-st
 
 ### Environment variables
 
-Use the consumer keys and access tokens generated for your app:
+Create a `.env` file in the root of the project and add the consumer keys and access tokens generated for your app:
 
 ```dotenv
 CONSUMER_KEY=...
@@ -106,7 +106,7 @@ crontab -e
 ```
 
 Assuming the project resides in a home folder of a user `your_user` with Python and `poetry` installed on the same box,
-then you can schedule it with following command:
+then you can schedule it with adding to your crontab a line like the following:
 
 ```
 0 9 * * * cd /home/your_user/kleio-bot && /home/your_user/.local/bin/poetry run python main.py
